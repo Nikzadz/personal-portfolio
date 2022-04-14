@@ -1,0 +1,193 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #1abc9c;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary: #22313f;
+    --primary-light: #34495e;
+    --bs-secondary: #8dc6ff;
+    --background: #e4f1fe; 
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --divider-color: #BDBDBD;
+    --black: #000000;
+}
+
+html{
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: var(--background);
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+.text-primary{
+    color: var(--primary-text-color);
+}
+.text-secondary{
+    color: var(--secondary-text-color);
+}
+.text-white{
+    color: var(--bs-white);
+}
+.txt-black{
+    color: var(--black);
+}
+.bg-primary{
+    background-color: var(--bs-primary);
+}
+.bg-secondary{
+    background-color: var(--bs-secondary);
+}
+.bg-white{
+    background-color: var(--bs-white);
+}
+.container{
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.prof-img{
+    width: 20%;
+    margin-top: 10%;
+    border-radius: 100%;
+}
+.btn {
+    display: inline-block;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor:pointer;
+    background-color: transparent;
+    border: 0.5% solid transparent;
+    padding: 10px 20px;
+    margin: 4px 2px;
+  }
+  .btn-resume {
+    font-size: medium;
+    color: #000000;
+    background-color: var(--divider-color);
+    border-color: var(--bs-primary);
+    display: inline-block;
+    border-radius: 20px;
+  }
+  .btn-resume:hover {
+    background-color: var(--primary-light);
+    border-color: var(--bs-secondary);
+  }
+  .btn-contact {
+    font-size: medium;
+    color: #000000;
+    background-color: var(--divider-color);
+    border-color: var(--bs-primary);
+    display: inline-block;
+    border-radius: 20px;
+  }
+  .btn-contact:hover {
+    background-color: var(--primary-light);
+    border-color: var(--bs-secondary);
+  }
+  .mb-5{
+      margin-bottom: 5%;
+  }
+  .mt-5{
+      margin-top: 5%;
+  }
+  .mr-5{
+      margin-right: 5%;
+  }
+  .m-5{
+      margin: 15%;
+  }
+  .padding-top-5{
+      padding-top: 5%;
+  }
+  .padding-5{
+      padding: 5%;
+  }
+  .padding-bottom-5{
+      padding-bottom: 5%;
+  }
+  .font-large{
+      font-size: xx-large;
+  }
+  .education-item{
+      margin: 5%;
+      padding: 10px 20px;
+      border-width: 5px;
+      border-style:solid;
+      border-color:var(--secondary-text-color);
+      border-radius: 30px;   
+  }
+  .education-item:hover{
+    background-color: var(--bs-light); 
+}
+@media  screen and (min-width: 400px) {
+    .flex-container {
+        display: flex;
+    }
+    .flex-child {
+        flex: 1;
+        background-color: var(--primary-light) ;
+    }  
+    
+    .flex-child:first-child {
+        margin-right: 20px;
+    }
+    input{
+        margin: 4%;
+        padding: 1%;
+        width: 80%;
+        border: none;
+        border-bottom: 2px solid var(--black);
+    }
+}
+.font-spacing{
+    letter-spacing: 0.1em;
+}
+.form{
+    margin: 3%;
+    padding: 3%;
+    border-width: 5px;
+    border-style:solid;
+    border-color:var(--secondary-text-color);
+    border-radius: 30px; 
+}
+input{
+    margin: 1%;
+    padding: 1%;
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid var(--black);
+}
+input:focus {
+    outline: none;
+    border: 3px solid #555;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin-top: 3%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
+ 

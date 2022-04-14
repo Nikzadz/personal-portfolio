@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nikzad Zahedi</title>
+
+    <script type="text/javascript" src="js/source.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="css/myStyle.css" rel="stylesheet">
+
+
+</head>
+
+<body id="top-page">
+    <header class="bg-primary text-white"  id="header">
+        <div class="container">
+            <img class="prof-img bg-secondary" src="assets/pictures/me.jpeg" alt="..." />
+            <h2 class="txt-black">Nikzad Zahedi</h2>
+                    <h4>Software Engineer
+                        </h1>           
+                <br>  
+                <div>
+                    <button  class="btn btn-resume mb-5"><a href="assets/Resume.pdf" download>Download resume</a>
+                    </button>
+                    <button  class="btn btn-contact mb-5"><a href="#contactme-lbl" download>Contact me</a><br>
+                    </button>
+                </div>
+        </div>
+    </header>
+    <section class="container" id="education">
+        <h1 class="text-secondary font-large padding-top-5">EDUCATION</h1>
+        <div class="education-item">
+            <h2 class="text-center text-secondary">Computer Programming, Seneca College</h2>
+            <h3 class="text-center text-secondary">College Diploma</h3>
+            <h3 class="text-center text-secondary">(2021-2023)</h3>
+        </div>
+        <div class="education-item">
+            <h2 class="text-center text-secondary">Northview Heights Secondary School</h2>
+            <h3 class="text-center text-secondary">High School Diploma</h3>
+            <h3 class="text-center text-secondary">(2019-2021)</h3>
+        </div>
+    </section>
+
+    <section class="bg-primary text-white padding-bottom-5" id="about">
+        <div class="float-container container">
+            <h1 class="padding-5 font-large text-white">About</h1>
+            <div class="flex-container">
+
+                <div class="container flex-child padding-5">
+                  <h2>About Me and Academic Honesty:</h2>
+                  <p class="font-spacing">I, Nikzad Zahedi, declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. 
+                      No part of this assessment has been copied manually or electronically from any other source 
+                      (including web sites) except for the information supplied by the WEB222 instructors and / 
+                      or made available in this assessment for my use. I also declare that no part of this 
+                      assignment has been distributed to other students.</p>
+                      <p>Date: 13/04/2022</p>
+                </div>
+                
+                <div class="container flex-child">
+                    <table class="container list-unstyled">
+                        <tr>
+                          <td><h3 class="text-center">AGE:</h3></td>
+                          <td><h2 class="text-center">19</h2></td>
+                        </tr>
+                        <tr>
+                          <td><h3 class="text-center">EMAIL:</h3></td>
+                          <td><h2 class="text-center">nikzadzahedi@gmail.com</h2></td>
+                        </tr>
+                        <tr>
+                            <td><h3 class="text-center">LANGUAGE:</h3></td>
+                            <td><h2 class="text-center">English, Farsi(Persian)</h2></td>
+                          </tr>
+
+                          <tr>
+                            <td><h3 class="text-center">STUDENT ID:</h3></td>
+                            <td><h2 class="text-center">147817209</h2></td>
+                          </tr>                        
+                          <tr>
+                            <td><h3 class="text-center">INSTRUCTOR:</h3></td>
+                            <td><h2 class="text-center">Alireza Moghaddam</h2></td>
+                          </tr>
+                        </table>
+                </div>
+                
+              </div>
+            
+          </div>
+
+    </section>
+    <section class="mt-5 container ">
+        
+        <h1 class="padding-5 font-large text-secondary" id="contactme-lbl">Contact Me</h1>
+        <form id="info-form" name="info" class="text-primary form">
+            <label for="name" class="font-large">Your name:</label>
+            <input id="name"
+                   type="text" />
+            <br><br>
+            <label for="email" class="font-large">Email Address:</label>
+            <input id="email" type="email"/>
+            <br><br>
+            <label for="street" class="font-large">Street Address:</label>
+            <input id="street" type="text"/>
+            <br><br>
+            <label for="city" class="font-large">City:</label>
+            <input id="city" type="text" list="suggestions" />
+            <datalist id="suggestions">
+                <option label="" value="Calgary"></option>
+                <option label="" value="Edmonton"></option>
+                <option label="" value="Iqualuit"></option>
+                <option label="" value="Ottawa"></option>
+                <option label="" value="Montreal"></option>
+                <option label="" value="St. John"></option>
+                <option label="" value="St. John's"></option>
+                <option label="" value="Toronto"></option>
+                <option label="" value="Vancouver"></option>
+                <option label="" value="Whitehorse"></option>
+                <option label="" value="Winnipeg"></option>
+                <option label="" value="Yellowknife"></option>
+            </datalist>
+            <br><br>
+            <label for="postalcode" class="font-large">Postal Code:</label>
+            <input id="postalcode" type="text" pattern="[A-Z][0-9][A-Z] [0-9][A-Z][0-9]" title="A1B 2C3"/>
+    
+        
+            <fieldset class="radio-button mt-5">
+                <legend>What's the purpose of your message?</legend>
+                
+                <input type="radio" id="hiring" name="purpose" value="Hiring" onclick="activate()">
+                <label for="hiring">Hiring</label><br>
+                <label for="hourlyrate" class="">Hourly rate: $</label>
+                <input id="hourlyrate" type="number" pattern="[0-9]{3}" disabled /><br>
+                <input type="radio" id="comment" name="purpose" value="comment" onclick="deactivate()">
+                <label for="comment">Comment</label><br>
+                <input type="radio" id="question" name="purpose" value="question" onclick="deactivate()">
+                <label for="question">Question</label>
+            </fieldset>
+            <textarea id="message">Your message...</textarea>
+        
+            <label for="agree-disagree" class="mt-5">I agree to be contacted by Nikzad in the future.</label>
+            <input type="checkbox" name="agree" id="agree-disagree">
+        
+        </form>
+        <button type="submit" class="btn btn-resume mb-5" onclick="validate()">Send</button>
+    </section>
+
+    <div class="copyright py-4 text-center text-primary">
+        <div class="container"><small>Copyright &copy; Nikzad Zahedi 2022</small></div>
+    </div>
+
+</body>
+
+</html>
